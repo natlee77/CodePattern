@@ -3,7 +3,7 @@
 The task:
 You have been commissioned to create a program for a kennel. The requirements of the program are as follows:
 
-The program should be able to
+The program should be able to:
  1.  Register new customers
  2.  Register new animals
  3.  See which customers are registered
@@ -16,5 +16,7 @@ The program should be able to
     ---Laundry
     ----Claw clipping
   10. When an animal is picked up, a receipt must be shown with the cost of the day and any extra services.
+
+
 Other functionality that you think is relevant
 Think about how the requirements for the program could change in the future and how in such cases you could expand the program WITHOUT having to change existing code. 

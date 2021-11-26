@@ -1,0 +1,13 @@
+D:\Nataliya\.NET\Code pattern\Code\My\upp1_Console\SOLID\obj\Debug\netcoreapp3.1\SOLID.csprojAssemblyReference.cache
+D:\Nataliya\.NET\Code pattern\Code\My\upp1_Console\SOLID\obj\Debug\netcoreapp3.1\SOLID.AssemblyInfoInputs.cache
+D:\Nataliya\.NET\Code pattern\Code\My\upp1_Console\SOLID\obj\Debug\netcoreapp3.1\SOLID.AssemblyInfo.cs
+D:\Nataliya\.NET\Code pattern\Code\My\upp1_Console\SOLID\obj\Debug\netcoreapp3.1\SOLID.csproj.CoreCompileInputs.cache
+D:\Nataliya\.NET\Code pattern\Code\My\upp1_Console\SOLID\bin\Debug\netcoreapp3.1\SOLID.exe
+D:\Nataliya\.NET\Code pattern\Code\My\upp1_Console\SOLID\bin\Debug\netcoreapp3.1\SOLID.deps.json
+D:\Nataliya\.NET\Code pattern\Code\My\upp1_Console\SOLID\bin\Debug\netcoreapp3.1\SOLID.runtimeconfig.json
+D:\Nataliya\.NET\Code pattern\Code\My\upp1_Console\SOLID\bin\Debug\netcoreapp3.1\SOLID.runtimeconfig.dev.json
+D:\Nataliya\.NET\Code pattern\Code\My\upp1_Console\SOLID\bin\Debug\netcoreapp3.1\SOLID.dll
+D:\Nataliya\.NET\Code pattern\Code\My\upp1_Console\SOLID\bin\Debug\netcoreapp3.1\SOLID.pdb
+D:\Nataliya\.NET\Code pattern\Code\My\upp1_Console\SOLID\obj\Debug\netcoreapp3.1\SOLID.dll
+D:\Nataliya\.NET\Code pattern\Code\My\upp1_Console\SOLID\obj\Debug\netcoreapp3.1\SOLID.pdb
+D:\Nataliya\.NET\Code pattern\Code\My\upp1_Console\SOLID\obj\Debug\netcoreapp3.1\SOLID.genruntimeconfig.cache

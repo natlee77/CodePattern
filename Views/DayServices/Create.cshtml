@@ -1,0 +1,54 @@
+﻿@model SOLID.Models.DayService
+
+@{
+    ViewData["Title"] = "Create";
+}
+<main>
+    <div class="container">
+        <div class="hero-image"><img class="hero  img-fluid" src="/img/WorkingAnimals.jpg"></div>
+        <h2>Here you can Create   new  Day service </h2>
+        
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="DateGetIn" class="control-label"></label>
+                        <input asp-for="DateGetIn" class="form-control" />
+                        <span asp-validation-for="DateGetIn" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                            <label asp-for="DateGetOut" class="control-label"></label>
+                            <input asp-for="DateGetOut" class="form-control" />
+                            <span asp-validation-for="DateGetOut" class="text-danger"></span>
+                        </div>
+                    <div class="form-group">
+                        <label asp-for="PricePerDag" class="control-label"></label>
+                        <input asp-for="PricePerDag" class="form-control" />
+                        <span asp-validation-for="PricePerDag" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="PetsId" class="control-label"></label>
+                        <select asp-for="PetsId" class="form-control" asp-items="ViewBag.PetsId"></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="InvoiceId" class="control-label"></label>
+                        <select asp-for="InvoiceId" class="form-control" asp-items="ViewBag.InvoiceId"></select>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <a class="btn btn-primary" asp-action="Index">Back to List</a>
+        </div>
+</div>
+    </main>
+
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }

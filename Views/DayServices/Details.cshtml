@@ -1,0 +1,52 @@
+﻿@model SOLID.Models.DayService
+
+@{
+    ViewData["Title"] = "Details";
+}
+<main>
+    <div class="container">
+        <div class="hero-image"><img class="hero  img-fluid" src="/img/WorkingAnimals.jpg"></div>
+        <h2>Here you can see the  details  of Day service </h2>        
+
+        <div>
+            
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.DateGetIn)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.DateGetIn)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.DateGetOut)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.DateGetOut)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.PricePerDag)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.PricePerDag)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Animal.PetsName)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Animal.PetsName)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Invoice)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Invoice.InvoiceId)
+                </dd>
+            </dl>
+        </div>
+        <div>
+            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.ScheduleID">Edit</a> |
+            <a class="btn btn-primary" asp-action="Index">Back to List</a>
+        </div>
+</div>
+</main>

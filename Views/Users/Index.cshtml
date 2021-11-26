@@ -1,0 +1,62 @@
+﻿@model IEnumerable<SOLID.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<main>
+    <div class="container">
+        <div class="hero-image"><img class="hero  img-fluid" src="img/Taking-Care-of-Animals_-Hero.jpg"></div>
+        <h2>Here you can create  new, edit, delete  costumer </h2>
+
+        <p>
+            <a class="btn btn-primary" asp-action="Create">Add New User</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                       #
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FirstName)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.LastName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.UserId }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.UserId }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.UserId })
+                    </td>
+                </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+</main>

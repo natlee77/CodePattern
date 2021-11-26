@@ -1,0 +1,56 @@
+﻿@model SOLID.Models.DayService
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<main>
+    <div class="container">
+        <div class="hero-image"><img class="hero  img-fluid" src="/img/WorkingAnimals.jpg"></div>
+        <h2>Here you can   Delete  day service </h2>
+       
+
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+            <h4>DayService</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.DateGetIn)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.DateGetIn)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.DateGetOut)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.DateGetOut)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.PricePerDag)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.PricePerDag)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Animal.PetsName)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Animal.PetsName)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Invoice)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Invoice.InvoiceId)
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="ScheduleID" />
+                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                <a class="btn btn-primary" asp-action="Index">Back to List</a>
+            </form>
+        </div>
+</div>
+</main>

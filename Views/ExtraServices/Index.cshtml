@@ -1,0 +1,77 @@
+﻿@model IEnumerable<SOLID.Models.ExtraService>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<main>
+    <div class="container">
+        <div class="hero-image"><img class="hero  img-fluid" src="img/R.jpg"></div>
+        
+        <h2>Index</h2>
+
+        <p>
+            <a class="btn btn-primary" asp-action="Create">Create New</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        #
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Date)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Done)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ServiceDescription)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ServicePrice)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Animal.PetsName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Invoice)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ExtraServiceId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Done)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ServiceDescription)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ServicePrice)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Animal.PetsName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Invoice.InvoiceId)
+                    </td>
+                    <td>
+                        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.ExtraServiceId">Edit</a> |
+                        <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.ExtraServiceId">Details</a> |
+                        <a class="btn btn-primary" asp-action="Delete" asp-route-id="@item.ExtraServiceId">Delete</a>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+</div>
+</main>

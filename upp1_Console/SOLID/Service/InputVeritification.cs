@@ -6,7 +6,7 @@ namespace SOLID.Service
 {
     class InputVerification
     {
-        public static bool VerifyName(string name)
+        public static bool VerifyText(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
             {

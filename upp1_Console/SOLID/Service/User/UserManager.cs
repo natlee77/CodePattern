@@ -18,7 +18,7 @@ namespace SOLID.Service
             user.FirstName = DataInput.FromConsole();
 
             // Verify first name and if false return null
-            if (InputVerification.VerifyName(user.FirstName) == false)
+            if (InputVerification.VerifyText(user.FirstName) == false)
             {
                 DataOutput.ToConsole("That is not a valid first name.");
                 return null;
@@ -29,7 +29,7 @@ namespace SOLID.Service
             user.LastName = DataInput.FromConsole();
 
             // Verify last name and if false return null
-            if (InputVerification.VerifyName(user.LastName) == false)
+            if (InputVerification.VerifyText(user.LastName) == false)
             {
                 DataOutput.ToConsole("That is not a valid last name.");
                 return null;

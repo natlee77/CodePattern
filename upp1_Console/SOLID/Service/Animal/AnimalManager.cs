@@ -18,7 +18,7 @@ namespace SOLID.Service
             _animal.PetsName = DataInput.FromConsole();
 
             // Verify  
-            if (InputVerification.VerifyName(_animal.PetsName) == false)
+            if (InputVerification.VerifyText(_animal.PetsName) == false)
             {
                 DataOutput.ToConsole("That is not a valid name.");
                 return null;
@@ -28,7 +28,7 @@ namespace SOLID.Service
             _animal.TypeOfAnimal = DataInput.FromConsole();
 
             // Verify  
-            if (InputVerification.VerifyName(_animal.TypeOfAnimal) == false)
+            if (InputVerification.VerifyText(_animal.TypeOfAnimal) == false)
             {
                 DataOutput.ToConsole("That is not a valid type.");
                 return null;

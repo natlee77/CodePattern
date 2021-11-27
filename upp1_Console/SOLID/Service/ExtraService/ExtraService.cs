@@ -2,18 +2,18 @@
  
 using SOLID.Interfaces;
 
-namespace SOLID.Models
+namespace SOLID.Service
 {
     public class ExtraService : IExtraService
     {
         
          
-        public int ExtraServiceId { get ; set  ; }
+        public int esId { get ; set  ; }
         public DateTime Date { get  ; set  ; }
         public bool   Done { get  ; set  ; }
         public string ServiceDescription { get  ; set  ; }
         public double ServicePrice { get  ; set ; }
-        public int PetsId { get; set; }
+        public string PetsName { get; set; }
         public int InvoiceId { get; set; }
 
 
@@ -26,14 +26,14 @@ namespace SOLID.Models
 
         public ExtraService()
         { }
-        public ExtraService(int extraServiceId, DateTime date, bool done, string serviceDescription, double servicePrice, int petsId, int invoiceId)
+        public ExtraService(int extraServiceId, DateTime date, bool done, string serviceDescription, double servicePrice, string petsName, int invoiceId)
         {
-            ExtraServiceId = extraServiceId;
+            esId = extraServiceId;
             Date = date;
             Done = done;
             ServiceDescription = serviceDescription;
             ServicePrice = servicePrice;
-            PetsId = petsId;
+            PetsName = petsName;
             InvoiceId = invoiceId;
         }
     }

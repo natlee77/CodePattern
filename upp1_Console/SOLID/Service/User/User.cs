@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace SOLID.Models
+namespace SOLID.Service
 {
    public  class User   : IUser  
     {
@@ -11,7 +11,7 @@ namespace SOLID.Models
         public string FirstName { get; set; }   
         public string Email { get; set; }         
         public string LastName { get; set; }
-        public string DisplayName => $"{FirstName }  {LastName }";
+        public string DisplayName { get; set; }
         public User() //tomt -altid
         {
         }
@@ -27,6 +27,6 @@ namespace SOLID.Models
         public virtual ICollection<Animal> Animals { get; set; }
         public virtual ICollection<Invoice> Invoices { get; set; }
 
-
+       
     }
 }

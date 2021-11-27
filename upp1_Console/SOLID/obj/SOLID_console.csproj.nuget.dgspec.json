@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Nataliya\\.NET\\Code pattern\\Code\\My\\upp1_Console\\SOLID\\SOLID_console.csproj": {}
+    "D:\\Nataliya\\.NET\\Code pattern\\Code\\My\\upp1\\SOLID\\upp1_Console\\SOLID\\SOLID_console.csproj": {}
   },
   "projects": {
-    "D:\\Nataliya\\.NET\\Code pattern\\Code\\My\\upp1_Console\\SOLID\\SOLID_console.csproj": {
+    "D:\\Nataliya\\.NET\\Code pattern\\Code\\My\\upp1\\SOLID\\upp1_Console\\SOLID\\SOLID_console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Nataliya\\.NET\\Code pattern\\Code\\My\\upp1_Console\\SOLID\\SOLID_console.csproj",
+        "projectUniqueName": "D:\\Nataliya\\.NET\\Code pattern\\Code\\My\\upp1\\SOLID\\upp1_Console\\SOLID\\SOLID_console.csproj",
         "projectName": "SOLID_console",
-        "projectPath": "D:\\Nataliya\\.NET\\Code pattern\\Code\\My\\upp1_Console\\SOLID\\SOLID_console.csproj",
+        "projectPath": "D:\\Nataliya\\.NET\\Code pattern\\Code\\My\\upp1\\SOLID\\upp1_Console\\SOLID\\SOLID_console.csproj",
         "packagesPath": "C:\\Users\\46735\\.nuget\\packages\\",
-        "outputPath": "D:\\Nataliya\\.NET\\Code pattern\\Code\\My\\upp1_Console\\SOLID\\obj\\",
+        "outputPath": "D:\\Nataliya\\.NET\\Code pattern\\Code\\My\\upp1\\SOLID\\upp1_Console\\SOLID\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -43,6 +43,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

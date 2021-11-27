@@ -11,8 +11,8 @@ namespace SOLID.Interfaces
         string LastName { get; set; }
         string Email { get; set; }
 
+        string DisplayName => $"{FirstName }  {LastName }";
 
-        
 
     }
 }

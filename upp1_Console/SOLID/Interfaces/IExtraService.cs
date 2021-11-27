@@ -6,7 +6,7 @@ namespace SOLID.Interfaces
 {
     internal interface IExtraService
     {
-        int  ExtraServiceId { get; set; }
+        int  esId { get; set; }
         DateTime Date { get; set; }
         bool  Done { get; set; }
         string ServiceDescription { get; set; }

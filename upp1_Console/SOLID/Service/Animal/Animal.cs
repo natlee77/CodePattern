@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace SOLID.Models
+namespace SOLID.Service
 {
     public class Animal : IAnimal 
     {
@@ -25,10 +25,11 @@ namespace SOLID.Models
             TypeOfAnimal = typeOfAnimal;
         }
       
-        public virtual User User{ get; set; }
+        public virtual User User{ get   ; set ; }
+        
         public virtual List<ExtraService> ExtraServices { get; set; }
         public virtual List<DayService> Schedules { get; set; }
-
+        
     }
 
 }

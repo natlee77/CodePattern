@@ -1,0 +1,16 @@
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\obj\Debug\netcoreapp3.1\SOLID_console.csprojAssemblyReference.cache
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\obj\Debug\netcoreapp3.1\SOLID_console.AssemblyInfoInputs.cache
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\obj\Debug\netcoreapp3.1\SOLID_console.AssemblyInfo.cs
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\obj\Debug\netcoreapp3.1\SOLID_console.csproj.CoreCompileInputs.cache
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\bin\Debug\netcoreapp3.1\SOLID_console.exe
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\bin\Debug\netcoreapp3.1\SOLID_console.deps.json
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\bin\Debug\netcoreapp3.1\SOLID_console.runtimeconfig.json
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\bin\Debug\netcoreapp3.1\SOLID_console.runtimeconfig.dev.json
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\bin\Debug\netcoreapp3.1\SOLID_console.dll
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\bin\Debug\netcoreapp3.1\SOLID_console.pdb
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\bin\Debug\netcoreapp3.1\Autofac.dll
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\obj\Debug\netcoreapp3.1\SOLID_console.csproj.CopyComplete
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\obj\Debug\netcoreapp3.1\SOLID_console.dll
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\obj\Debug\netcoreapp3.1\SOLID_console.pdb
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp1_Console\SOLID\obj\Debug\netcoreapp3.1\SOLID_console.genruntimeconfig.cache

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using SOLID.Interfaces;
 
-namespace SOLID.Models
+namespace SOLID.Service
 {
     public class DayService : IDayService
     {
         
-        public int ScheduleID { get; set; }
+        public int dsID { get; set; }
         public DateTime DateGetIn { get; set; }
         public DateTime DateGetOut { get; set; }
         public double PricePerDag { get; set; }
@@ -17,9 +17,9 @@ namespace SOLID.Models
 
         public DayService()
         { }
-        public DayService(int scheduleID, DateTime dateGetIn, DateTime dateGetOut, double pricePerDag, int petsId, int invoiceId)
+        public DayService(int dsID, DateTime dateGetIn,   DateTime dateGetOut, double pricePerDag, int petsId, int invoiceId)
         {
-            ScheduleID = scheduleID;
+            dsID = dsID;
             DateGetIn = dateGetIn;
             DateGetOut = dateGetOut;
             PricePerDag = pricePerDag;

@@ -3,7 +3,7 @@ using SOLID.Interfaces;
 using System; 
 using System.Collections.Generic;
 
-namespace SOLID.Models
+namespace SOLID.Service
 {
     public class Invoice : ICalculator 
     {

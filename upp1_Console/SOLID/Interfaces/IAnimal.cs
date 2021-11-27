@@ -11,6 +11,6 @@ namespace SOLID.Interfaces
         string PetsName { get; set; }
         string TypeOfAnimal { get; set; }
         
-
+       
     }
 }

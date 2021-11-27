@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "RCMFq6QcROlB7JuAtDHjRMsX9Mi090fOQycQe4LmfK/r/h4b9V9Vm4CtNqZSYrJV9OamXyDTWNGSD3a+jnR4uw==",
+  "dgSpecHash": "SoBvZfTb0WcxeE2RzOGH1KLgNE6PkgxsOwJ8Q6vm9jSlVAyzlehgHIo+8yo6AbyoTr9MZjyxEh0BV6kI40ixJw==",
   "success": true,
-  "projectFilePath": "D:\\Nataliya\\.NET\\Code pattern\\Code\\My\\upp1_Console\\SOLID\\SOLID_console.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Nataliya\\.NET\\Code pattern\\Code\\My\\upp1\\SOLID\\upp1_Console\\SOLID\\SOLID_console.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\46735\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
+    "C:\\Users\\46735\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
   "logs": []
 }

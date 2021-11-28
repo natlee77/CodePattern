@@ -7,7 +7,7 @@ namespace SOLID.Interfaces
      internal  interface IAnimal
     {
         int PetsId { get; set; }
-        int UserId { get; set; }
+        string UserId{ get; set; }
         string PetsName { get; set; }
         string TypeOfAnimal { get; set; }
         

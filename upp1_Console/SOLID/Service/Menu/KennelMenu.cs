@@ -19,11 +19,11 @@ namespace SOLID.Service
         {
             // Create initial menu
             _menuManager.CreateMenu(" Our service , choose what you want to do:", "Copyright Nata.Lisjö \n");
-            _menuManager.CreateMenuItem(1, "Registrate New User", ThingsToDo.RegistrateUser);
-            _menuManager.CreateMenuItem(2, "Registrate Your Animal  ", ThingsToDo.RegistrateAnimal);
-            _menuManager.CreateMenuItem(3, "Animal DayCare", ThingsToDo.RegistrateAnimalDayCare);
-            _menuManager.CreateMenuItem(4, "Show all User", ThingsToDo.ShowUsers);
-            _menuManager.CreateMenuItem(5, "Show all animals", ThingsToDo.ShowAnimals);
+            _menuManager.CreateMenuItem(1, "Registrate New User",  ToDoUser.RegistrateUser);
+            _menuManager.CreateMenuItem(2, "Registrate Your Animal  ",  ToDoAnimal.RegistrateAnimal);
+            _menuManager.CreateMenuItem(3, "Animal DayCare", ToDoDayService.RegistrateAnimalDayCare);
+            _menuManager.CreateMenuItem(4, "Show all User",  ToDoUser.ShowUsers);
+            _menuManager.CreateMenuItem(5, "Show all animals",  ToDoAnimal.ShowAnimals);
             _menuManager.CreateMenuItem(6, "Cut and Trim", ToDoExtraService.Create);
             _menuManager.CreateMenuItem(7, "Wash Animal", ToDoExtraService.Create);
             _menuManager.CreateMenuItem(8, "Cut nails", ToDoExtraService.Create);

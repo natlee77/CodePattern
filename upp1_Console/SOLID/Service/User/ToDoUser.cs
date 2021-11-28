@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SOLID.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -23,7 +24,7 @@ namespace SOLID.Service
         public static void ShowUsers()
         {
 
-            List<User> Users  = new List<User>
+            List<IUser> Users  = new List<IUser>
             {
              new User {UserId=1, FirstName="Stefan", LastName="Karlsson", Email="StefanKarlson@gmail.com",},
              new User {UserId=2, FirstName="Johan", LastName="Larsson", Email="JLarsson@gmail.com"},

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SOLID.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -26,7 +27,7 @@ namespace SOLID.Service
         }
         public static void ShowAnimals()
         {
-            List<Animal> AnimalsList = new List<Animal>
+            List<IAnimal> AnimalsList = new List<IAnimal>
                 {
                       new Animal {PetsId=1, PetsName="Good Boy", TypeOfAnimal="Dog", UserId="2"},
                       new Animal {PetsId=2, PetsName="Tindra", TypeOfAnimal="Dog",UserId="3"},

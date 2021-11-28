@@ -6,21 +6,7 @@ namespace SOLID.Service
 {
    internal class ExtraServiceManager
     {
-        //static string CreateWashing()
-        //{
-        //    string v = "washing service";
-        //    return v;
-        //}
-        //static string CutNails()
-        //{
-        //    string v = "Cut nails";
-        //    return v;
-        //}
-        //static string CreateTrimming()
-        //{ 
-        //    string v = "trimming Service";
-        //    return v;
-        //}
+         
         internal static ExtraService CreateExtraService()
         {
 

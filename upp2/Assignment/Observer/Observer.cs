@@ -7,37 +7,51 @@ using System.Threading.Tasks;
 
 namespace Design_Patterns_Assignment
 {
-internal class Observer_class 
+    internal class Observer_class 
     {
-        /*uppgift:
-          Refactor this code so that it uses the Observer Pattern */
-
-
         internal static void Run()
         {
             EmailWatcher emailWatcher = new EmailWatcher();
             Email Email = new Email();
-            var email = "";
+
 
             Console.WriteLine("---------------------");
             Console.WriteLine(" Observer   :");
+            Console.WriteLine("---------------------");
             Console.WriteLine(" Checking Email");
-            Console.WriteLine("---------------------");         
-            while (string.IsNullOrEmpty(email))
-            {
-                email = Email.Check();
-            }
-            
-            Console.WriteLine(email);
-            Console.WriteLine( );
+            Console.WriteLine("---------------------");
 
-             
-               
-             
-        }
-       
+            emailWatcher.Update();
+            Console.WriteLine();
+
+        }        
     }
 }
+/*uppgift:
+          Refactor this code so that it uses the Observer Pattern 
+
+          internal static void Run()
+        {
+            // Refactor this code so that it uses the Observer Pattern
+            Console.WriteLine("Observer");
+            var email = "";
+            while (string.IsNullOrEmpty(email))
+            {
+                email=Email.Check();
+            }            
+            Console.WriteLine(email);
+            Console.WriteLine();
+        }
+        internal class Email
+    {
+        internal static string Check()
+        {
+            var evenMinute = DateTime.Now.Minute % 2;
+            if (evenMinute==0)
+            {
+                return "this is the email";
+            }
+            return null;
+        } */
 
 
- 

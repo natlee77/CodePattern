@@ -33,12 +33,7 @@ namespace Design_Patterns_Assignment.Observer
                                 
                 observer.Update();
             }
-        }
-        public void UpdateTime()
-        {
-            Time = DateTime.Now;
-            NotifyObservers();
-        }
+        }         
         
         internal static string Check()    //class Email_upp
         {
@@ -50,10 +45,7 @@ namespace Design_Patterns_Assignment.Observer
             }
             return null;
            
-        }
-
-        
-       
+        }    
     }
 }
 

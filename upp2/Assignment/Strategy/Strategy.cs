@@ -6,18 +6,16 @@ namespace Design_Patterns_Assignment
 {
     /* What i want to happen to happen is    
              - Change type of message to send to sms etc.
-             - send message */
-
-    internal class Strategy_class 
-    {
-        // Refactor this code so that it uses the strategy Pattern
+             - send message
+    // Refactor this code so that it uses the strategy Pattern
         //MessageHandler.SendEmail(message);
         //MessageHandler.SendSMS(message);
-        //MessageHandler.SendFacebookMessage(message);
-        internal static void Run()        {
-            
+        //MessageHandler.SendFacebookMessage(message);*/
 
-            //Text Text = new Text();  
+    internal class Strategy_class    
+    {        
+        internal static void Run() 
+        {    
             MessageHandler MessageHandler = new MessageHandler();
             FacebookMessage FacebookMessage = new FacebookMessage();
             Email Email = new Email();
@@ -45,8 +43,7 @@ namespace Design_Patterns_Assignment
                 var userInput = Console.ReadKey(true).KeyChar;
 
                 switch (userInput)
-                {
-                     
+                {                    
                      
                     case 'f' or 'F':
                         ClearRow();
@@ -82,16 +79,13 @@ namespace Design_Patterns_Assignment
                 }
             }
         }
-
         private static void ClearRow()
         {
             // Set cursor below the menu
             Console.SetCursorPosition(1, 9);
-
             // Clear Row
             Console.Write("\r" + new string(' ', Console.BufferWidth) + "\r");
         }
-
     }
 }
  

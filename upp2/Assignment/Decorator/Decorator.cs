@@ -34,9 +34,7 @@ namespace Design_Patterns_Assignment
             Console.WriteLine(" Decorator");
             Console.WriteLine("-------------------");
             Console.WriteLine(" Please enter the text.");
-            Console.WriteLine("-------------------");
-            string textInput = Console.ReadLine();
-            Console.WriteLine("-------------------");
+            Console.WriteLine("-------------------");      
             Console.WriteLine(" Decorate your text. Select en TagStyle");
             Console.WriteLine("-------------------");
             Console.WriteLine();
@@ -52,69 +50,69 @@ namespace Design_Patterns_Assignment
             Console.WriteLine("M: SubScript");
             Console.WriteLine("N: SuperScript");
             Console.WriteLine("X: Exit");
-            Console.WriteLine("\nType the tags you want separated by space");
-            string tagSelection = Console.ReadLine();
-            string result = HTMLGenerator.TagProcessor(tagSelection, textInput);
-            Console.WriteLine(result);
-            Console.WriteLine();
 
-            var decor = Factory.CreateText();
-            decor.SetUserInput();
+            Console.WriteLine("\nType your text  : \n");
+            
+            
+             
+
+            var decorator = Factory.CreateText();
+            decorator.SetUserInput();
             //var newdecor = decor;
             while (true)
             {
-                Console.WriteLine("Add a tag style or press X for finished: ");
+                Console.WriteLine("Add a tag style or press A to show  , X to Exit: \n");
                 var userInput = Console.ReadKey(true).KeyChar;
                 switch (userInput)
                 {
                     case 'a' or 'A':
-                        Console.WriteLine($"Decorated text: {decor.GetText()}");
+                        Console.WriteLine($"Decorated text: {decorator.GetText()}");
                         //decor = newdecor;
                         break;
                     case 'b' or 'B':
                         Console.WriteLine("Add Bold text");
-                        decor = new Bold(decor);
+                        decorator = new Bold(decorator);
                         break;
                     case 'c' or 'C':
                         Console.WriteLine("Add Deleted text");
-                        decor = new Deleted(decor);
+                        decorator = new Deleted(decorator);
                         break;
                     case 'd' or 'D':
                         Console.WriteLine("Add Emphasized text");
-                        decor = new Emphasize(decor);
+                        decorator = new Emphasize(decorator);
                         break;
 
                     case 'e' or 'E':
                         Console.WriteLine("Add Important text");
-                        decor = new Important(decor);
+                        decorator = new Important(decorator);
                         break;
 
                     case 'f' or 'F':
                         Console.WriteLine("Add Inserted text");
-                        decor = new Insert(decor);
+                        decorator = new Insert(decorator);
                         break;
 
                     case 'g' or 'G':
                         Console.WriteLine("Add Italic text");
-                        decor = new Italic(decor);
+                        decorator = new Italic(decorator);
                         break;
 
                     case 'k' or 'K':
                         Console.WriteLine("Add Marked text");
-                        decor = new Marked(decor);
+                        decorator = new Marked(decorator);
                         break;
                     case 'l' or 'L':
                         Console.WriteLine("Add Smaller text");
-                        decor = new Smaller(decor);
+                        decorator = new Smaller(decorator);
                         break;
                     case 'm' or 'M':
                         Console.WriteLine("Add SubScript text");
-                        decor = new SubScript(decor);
+                        decorator = new SubScript(decorator);
                         break;
 
                     case 'n' or 'N':
                         Console.WriteLine("Add SuperScript text");
-                        decor = new SuperScript(decor);
+                        decorator = new SuperScript(decorator);
                         break;
 
                     case 'x' or 'X':

@@ -12,8 +12,13 @@ namespace Design_Patterns_Assignment.Observer
         
         public void Update( )
         {
-             
-             Email.Check();
+            var email = "";
+            while (string.IsNullOrEmpty(email))
+            {
+                email = Email.Check();
+            }
+            //Email.Check();
+            Console.WriteLine(email);
         }
 
     }

@@ -10,20 +10,24 @@ namespace Assignment2
     {
         private static void Main()
         {
+            //Console.WriteLine("Adapter");
+            //AdapterMain adapterMain = new();
+            //adapterMain.Run();
+            //Console.WriteLine();
+
+            Console.WriteLine("Facade");
+            FacadeMain facadeMain = new();
+            facadeMain.Run();
+            Console.WriteLine();
+
             //Console.WriteLine("Abstract Factory");
             //AbstractFactoryMain abstractFactory = new();
             //abstractFactory.Run();
             //Console.WriteLine();
 
-            //Console.WriteLine("Facade");
-            //FacadeMain facadeMain = new();
-            //facadeMain.Run();
-            //Console.WriteLine();
 
-            Console.WriteLine("Adapter");
-            AdapterMain adapterMain = new();
-            adapterMain.Run();
-            Console.WriteLine();
+
+
 
             //Console.WriteLine("State Command Memento");
             //SCMMain scmMain = new();

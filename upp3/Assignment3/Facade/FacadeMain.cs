@@ -9,8 +9,18 @@ namespace Assignment2.Facade
     class FacadeMain
     {
        public void Run()
-        {      
-            // Write a facade to make it easier to save and load words
+        {
+
+            Console.WriteLine(" Type the string 5 chars  long");
+            WordFacade WordFacade = new WordFacade();  //fasade
+          
+            WordFacade.Save();
+            WordFacade.Load();
+            
+        }
+    }
+}
+/*// Write a facade to make it easier to save and load words
 
                 List<char> one = new();
                 List<char> two = new();
@@ -39,7 +49,4 @@ namespace Assignment2.Facade
             {
                 char[] word = { one.Last(), two.Last(), three.Last(), four.Last(), five.Last() };
                 Console.WriteLine(word);
-            }
-        }
-    }
-}
+            }*/

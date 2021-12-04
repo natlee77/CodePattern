@@ -8,19 +8,20 @@ namespace Assignment2.Adapter
 {
     class AdapterMain
     {
+        // Skriv en adapter för ReturningStrings--string  som kan konsumeras av PrintingInts--int 
+        
+        // OBS TRASIG KOD - TA BORT NÄR DU BÖRJAR KODA
+        // Det jag vill göra men inte kan är
+        //ReturningStrings returningStrings = new ReturningStrings();
+        //PrintingInts printingInts = new();
+        //printingInts.Print(returningStrings.ReturnString());
         public void Run()
         {
-            // Skriv en adapter för ReturningStrings som kan konsumeras av PrintingInts           
+            IServer printServer = new  Server(); 
+            printServer.Print( );
+             
 
-            // ReturningStrings
-            // PrintingInts
-
-
-            // OBS TRASIG KOD - TA BORT NÄR DU BÖRJAR KODA
-            // Det jag vill göra men inte kan är
-            ReturningStrings returningStrings = new();
-            PrintingInts printingInts = new();
-            printingInts.Print(returningStrings.ReturnString());
+            //Console.Read();
         }
     }
 }

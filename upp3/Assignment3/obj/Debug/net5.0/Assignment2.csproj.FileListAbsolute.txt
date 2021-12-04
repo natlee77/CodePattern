@@ -14,3 +14,19 @@ E:\Archive\EPN Sverige AB\.Net Dev Kurs\Code Patterns\Repo\Design Patterns\Assig
 E:\Archive\EPN Sverige AB\.Net Dev Kurs\Code Patterns\Repo\Design Patterns\Assignment2\obj\Debug\net5.0\ref\Assignment2.dll
 E:\Archive\EPN Sverige AB\.Net Dev Kurs\Code Patterns\Repo\Design Patterns\Assignment2\obj\Debug\net5.0\Assignment2.pdb
 E:\Archive\EPN Sverige AB\.Net Dev Kurs\Code Patterns\Repo\Design Patterns\Assignment2\obj\Debug\net5.0\Assignment2.genruntimeconfig.cache
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\obj\Debug\net5.0\Assignment2.csprojAssemblyReference.cache
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\obj\Debug\net5.0\Assignment2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\obj\Debug\net5.0\Assignment2.AssemblyInfoInputs.cache
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\obj\Debug\net5.0\Assignment2.AssemblyInfo.cs
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\obj\Debug\net5.0\Assignment2.csproj.CoreCompileInputs.cache
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\obj\Debug\net5.0\Assignment2.dll
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\obj\Debug\net5.0\ref\Assignment2.dll
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\obj\Debug\net5.0\Assignment2.pdb
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\bin\Debug\net5.0\Assignment2.exe
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\bin\Debug\net5.0\Assignment2.deps.json
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\bin\Debug\net5.0\Assignment2.runtimeconfig.json
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\bin\Debug\net5.0\Assignment2.runtimeconfig.dev.json
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\bin\Debug\net5.0\Assignment2.dll
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\bin\Debug\net5.0\ref\Assignment2.dll
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\bin\Debug\net5.0\Assignment2.pdb
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp3\Assignment3\obj\Debug\net5.0\Assignment2.genruntimeconfig.cache

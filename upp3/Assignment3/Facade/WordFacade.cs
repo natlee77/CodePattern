@@ -35,8 +35,8 @@ namespace Assignment2.Facade
                 four.Add(input[3]);
                 five.Add(input[4]);
             }
-        }v
-        public void Load()                // Load Word
+        }
+        public void Load()                // Save Word
         {
 
             if (one.Count > 0)

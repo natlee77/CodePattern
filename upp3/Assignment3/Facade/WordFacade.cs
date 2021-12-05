@@ -10,16 +10,16 @@ namespace Assignment2.Facade
     {
         ////  facade to make it easier to save and load words
 
-        List<char> one = new();
-        List<char> two = new();
-        List<char> three = new();
-        List<char> four = new();
-        List<char> five = new();
+        readonly List<char> one = new();
+        readonly List<char> two = new();
+        readonly List<char> three = new();
+        readonly List<char> four = new();
+        readonly List<char> five = new();
 
-        
-  
-      
-         string input = Console.ReadLine();
+
+
+
+        readonly string  input = Console.ReadLine();
         public void Save()                 // Save Word
         {
             if (input.Length != 5)

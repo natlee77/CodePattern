@@ -20,14 +20,14 @@ namespace Assignment2
             //facadeMain.Run();
             //Console.WriteLine();
 
-            //Console.WriteLine("Abstract Factory");
-            //AbstractFactoryMain abstractFactory = new();
-            //abstractFactory.Run();
-            //Console.WriteLine();
+            Console.WriteLine("Abstract Factory");
+            AbstractFactoryMain abstractFactory = new();
+            abstractFactory.Run();
+            Console.WriteLine();
 
-            Console.WriteLine("State Command Memento");
-            SCMMain scmMain = new();
-            scmMain.Run();
+            //Console.WriteLine("State Command Memento");
+            //SCMMain scmMain = new();
+            //scmMain.Run();
         }
     }
 }

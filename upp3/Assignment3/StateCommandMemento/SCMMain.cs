@@ -15,9 +15,9 @@ namespace Assignment2.StateCommandMemento
         {
             Machine machine = new Machine();
 
-            Console.WriteLine("Turn Machine Off");
-            Console.WriteLine("Turn Machine On");
-            Console.WriteLine("Reset mashine  Machine and turn Off");
+            //Console.WriteLine("Turn Machine Off");
+            //Console.WriteLine("Turn Machine On");
+            //Console.WriteLine("Reset mashine  Machine and turn Off");
             while (true)
             {
                 var userinput = Console.ReadKey().Key;

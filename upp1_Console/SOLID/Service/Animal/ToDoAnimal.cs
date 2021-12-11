@@ -7,7 +7,8 @@ namespace SOLID.Service
 {
    public static class ToDoAnimal
     {
-     
+        static List<IAnimal> animals = new List<IAnimal>();
+        static List<IUser> users = new List<IUser>();
 
         //public static User User  { get { return null; }   }
 
@@ -15,7 +16,7 @@ namespace SOLID.Service
         {
             Console.WriteLine("Please registrate your Animal .");
             // Create a animal
-            Animal _animal = AnimalManager.CreateAnimal();
+            Animal _animal = AnimalManager.CreateAnimal( animals );
 
             // If user is not null print username and save to database
             if (_animal != null)
@@ -25,19 +26,15 @@ namespace SOLID.Service
             }
 
         }
-        public static void ShowAnimals()
+        public static void ShowAnimals( )
         {
-            List<IAnimal> AnimalsList = new List<IAnimal>
-                {
-                      new Animal {PetsId=1, PetsName="Good Boy", TypeOfAnimal="Dog", UserId="2"},
-                      new Animal {PetsId=2, PetsName="Tindra", TypeOfAnimal="Dog",UserId="3"},
-                      new Animal {PetsId=3, PetsName="MMMayuu", TypeOfAnimal="Cat", UserId="1"},
-                };
-
-            foreach (var a in AnimalsList)
+            List<IAnimal> animals = MockUpp.MockAnimals();
+            foreach (var a in animals)
             {
-                Console.WriteLine($"PetsId:{a.PetsId}, PetsName: {a.PetsName}, TypeOfAnimal: {a.TypeOfAnimal}, UserId:{a.UserId}");//User.DisplayName.GetType().Name}
+                Console.WriteLine($"PetsId:{a.PetsId}, PetsName: {a.PetsName}, TypeOfAnimal: {a.TypeOfAnimal}, PetsOwner:{a.PetsOwner.FirstName}");//User.DisplayName.GetType().Name}
             }
+            
         }
+        
     }
 }

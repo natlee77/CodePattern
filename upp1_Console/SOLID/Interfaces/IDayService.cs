@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SOLID.Interfaces
 {
-    internal interface IDayService
+    public interface IDayService
     {
        int dsID  { get; set; }
        DateTime   DateGetIn  { get; set; }

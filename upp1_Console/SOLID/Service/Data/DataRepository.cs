@@ -1,17 +1,23 @@
-﻿using SOLID.Service;
+﻿using SOLID.Interfaces;
+using SOLID.Service;
 using System;
+using System.Collections.Generic;
 
-namespace SOLID.Service
+namespace SOLID 
 {
-    internal class DataRepository
+    public class DataRepository
     {
         internal static void SaveUser(User user)
         {
             // Save user to database
         }
-        internal static void SaveAnimal(Animal animal)
+        public static void SaveAnimal(Animal animal)
         {
             // Save user to database
+        }
+        public void SaveAnimals(IAnimal animal, List<IAnimal> animals)
+        {
+            animals.Add(animal);
         }
         //internal static void SaveDate(Animal animal)
         //{

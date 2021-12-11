@@ -23,10 +23,5 @@ namespace SOLID.Service
             Email = email;
             
         }
-
-        public virtual ICollection<Animal> Animals { get; set; }
-        public virtual ICollection<Invoice> Invoices { get; set; }
-
-       
     }
 }

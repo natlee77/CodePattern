@@ -9,8 +9,8 @@ namespace SOLID.Service
 {
     public class KennelMenu : IKennelMenu
     {
-        private readonly IMenuManager _menuManager;
-
+        private readonly IMenuManager _menuManager;        
+      
         public KennelMenu(IMenuManager menuManager)
         {
             _menuManager = menuManager;

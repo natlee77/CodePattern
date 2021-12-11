@@ -4,13 +4,14 @@ using System.Text;
 
 namespace SOLID.Interfaces
 {
-     internal  interface IAnimal
+     public  interface IAnimal
     {
-        int PetsId { get; set; }
-        string UserId{ get; set; }
+        int PetsId { get; set; }       
         string PetsName { get; set; }
         string TypeOfAnimal { get; set; }
-        
-       
+        bool  Check{ get; set; }
+         IUser PetsOwner { get; set; }
+         IDayService DayService { get; set; }
+         IExtraService extraService { get; set; }
     }
 }

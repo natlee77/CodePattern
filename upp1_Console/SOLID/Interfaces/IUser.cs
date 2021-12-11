@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SOLID.Interfaces
 {
-    internal interface IUser 
+    public interface IUser 
     {
         int UserId { get; set; }
         string FirstName { get; set; }

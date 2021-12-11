@@ -29,9 +29,7 @@ namespace SOLID.Service
             }
         }
         public static bool VerifyDate(string date)
-        {
-
-            
+        {            
                 try
                 {
                     DateTime dt = DateTime.Parse(date);

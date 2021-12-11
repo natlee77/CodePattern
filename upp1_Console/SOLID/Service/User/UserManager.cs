@@ -35,8 +35,7 @@ namespace SOLID.Service
                 return null;
             }
 
-            // Create username
-            user.DisplayName = CreateUserName.CreateShortName(user);
+             
             return user;
         }
 

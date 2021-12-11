@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace Assignment2.StateCommandMemento
 {
-    class Reset : IMachineState
-    {
+    class MachineOffState : IMachineState
+    {   
         public void PowerSwitch()
         {
-            Console.WriteLine(" Reseting all commando");
-
-
-            Console.WriteLine("Turning Machine Off");
+            Console.WriteLine("Turning Machine On");
         }
     }
 }

@@ -11,13 +11,16 @@ namespace SOLID.Service
             Console.WriteLine("Please write date when you want We take care of your Animal .\n");
             // Create a date
             DayService _dayService = DayServiceManager.CreateDayService();
+            Animal animal = DayServiceManager.CheckInAnimal( );
 
             // If user is not null print username and save to database
             if (_dayService != null)
             {
-                DataOutput.ToConsole($"Your pets came in: {_dayService.DateGetIn}");
+                DataOutput.ToConsole($"Your pets is comming in: {_dayService.DateGetIn}");
                 DataRepository.SaveDayService(_dayService);
             }
         }
+         
+
     }
 }

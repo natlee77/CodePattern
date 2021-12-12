@@ -19,8 +19,7 @@ namespace SOLID.Service
 
 
         
-        public virtual Animal Animal { get; set; }
-      
+        public virtual Animal Animal { get; set; }      
         public virtual Invoice Invoice { get; set; }
 
 

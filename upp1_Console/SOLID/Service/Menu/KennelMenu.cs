@@ -19,18 +19,21 @@ namespace SOLID.Service
         {
             // Create initial menu
             _menuManager.CreateMenu(" Our service , choose what you want to do:", "Copyright Nata.Lisjö \n");
-            _menuManager.CreateMenuItem(1, "Registrate New User",  ToDoUser.RegistrateUser);
-            _menuManager.CreateMenuItem(2, "Registrate Your Animal  ",  ToDoAnimal.RegistrateAnimal);
-            _menuManager.CreateMenuItem(3, "Animal DayCare", ToDoDayService.RegistrateAnimalDayCare);
-            _menuManager.CreateMenuItem(4, "Show all User",  ToDoUser.ShowUsers);
-            _menuManager.CreateMenuItem(5, "Show all animals",  ToDoAnimal.ShowAnimals);
-            _menuManager.CreateMenuItem(6, "Cut and Trim", ToDoExtraService.Create);
-            _menuManager.CreateMenuItem(7, "Wash Animal", ToDoExtraService.Create);
-            _menuManager.CreateMenuItem(8, "Cut nails", ToDoExtraService.Create);
+            _menuManager.CreateMenuItem( 1, " Registrate New User",  ToDoUser.RegistrateUser);
+            _menuManager.CreateMenuItem( 2, " Registrate Your Animal  ",  ToDoAnimal.RegistrateAnimal);          
+            _menuManager.CreateMenuItem( 3, " Show all User",  ToDoUser.ShowUsers);
+            _menuManager.CreateMenuItem( 4, " Show all animals",  ToDoAnimal.ShowAnimals);
+            _menuManager.CreateMenuItem( 5, " Show Animals Owner by PetsName", ToDoAnimal.ShowAnimalsByName);
+            _menuManager.CreateMenuItem( 6, " Animal DayCare in", ToDoDayService.RegistrateAnimalDayCare);
+             _menuManager.CreateMenuItem( 7," Show all Animals in DayCare  ", ToDoAnimal.ShowAnimalsByCheckIn);
+
+            _menuManager.CreateMenuItem(8, "Cut and Trim", ToDoExtraService.Create);
+            _menuManager.CreateMenuItem(9, "Wash Animal", ToDoExtraService.Create);
+            _menuManager.CreateMenuItem(0, "Cut nails", ToDoExtraService.Create);
             _menuManager.ShowMenu();
         }
 
-        // This should probably be in its own class since its not really associated with the menu sort of maybe
+         
         public void UserChoice()
         {
             while (true)

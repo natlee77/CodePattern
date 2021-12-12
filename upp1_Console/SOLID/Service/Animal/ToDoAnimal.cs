@@ -28,7 +28,7 @@ namespace SOLID.Service
         }
         public static void ShowAnimals( )
         {
-            //List<IAnimal> animals = MockUpp.MockAnimals();
+             
             foreach (var a in animals)
             {
                 Console.WriteLine($"PetsId:{a.PetsId}, PetsName: {a.PetsName}, TypeOfAnimal: {a.TypeOfAnimal}, PetsOwner:{a.PetsOwner.FirstName}");

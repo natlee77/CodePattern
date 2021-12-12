@@ -16,7 +16,7 @@ namespace SOLID.Service
             // If user is not null print username and save to database
             if (user != null)
             {
-                DataOutput.ToConsole($"Your username is: {user.DisplayName}");
+                DataOutput.ToConsole($"We created new User, Your username is: {user.DisplayName}");
                 DataRepository.SaveUser(user);
             }
 

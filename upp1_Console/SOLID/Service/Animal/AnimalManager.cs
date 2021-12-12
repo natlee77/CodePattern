@@ -50,7 +50,8 @@ namespace SOLID.Service
             }
             else
             {
-                Console.WriteLine("This costumer is not found in our system, Please registrad new user .");
+                Console.WriteLine("This costumer is not found in our system, Please registrad Your self .");
+                return null;
             }
             return _animal;
            

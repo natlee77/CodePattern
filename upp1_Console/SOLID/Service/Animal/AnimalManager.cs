@@ -15,7 +15,10 @@ namespace SOLID.Service
             // Create a new animal
              Animal _animal = new Animal();
              IUser _petsOwner = new User();
-            List<IUser> users = MockUpp.MockUsers();
+            List<IUser> users = MockUpp.MockUserslist;
+            List<IAnimal> _animals = MockUpp.MockAnimals ;
+
+
             DataOutput.ToConsole("Please enter your Animal name.");
             _animal.PetsName = DataInput.FromConsole();
             // Verify  
@@ -45,7 +48,7 @@ namespace SOLID.Service
             if (_petsOwner != null)
             {                 
                 _animal.PetsOwner= _petsOwner;
-                DataRepository.SaveAnimal(_animal );
+                DataRepository.SaveAnimal(_animal ,_animals);
                 Console.WriteLine("Animal is created");
             }
             else

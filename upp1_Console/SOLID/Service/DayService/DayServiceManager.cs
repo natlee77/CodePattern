@@ -8,8 +8,8 @@ namespace SOLID.Service
 {
     internal class DayServiceManager
     {
-        static List<IUser> users = MockUpp.MockUsers();
-        static List<IAnimal> animals = MockUpp.MockAnimals();
+        //static List<IUser> users = MockUpp.MockUsers;
+        static List<IAnimal> animals = MockUpp.MockAnimals ;
       
         public static Animal CheckInAnimal( )
         {

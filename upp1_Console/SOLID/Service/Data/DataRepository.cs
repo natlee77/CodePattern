@@ -5,31 +5,26 @@ using System.Collections.Generic;
 
 namespace SOLID 
 {
-    public class DataRepository
+    public static class DataRepository
     {
-        internal static void SaveUser(User user)
+        public static void SaveUser(IUser user, List<IUser> users)
         {
-            // Save user to database
+            users.Add(user);
         }
-        public static void SaveAnimal(Animal animal)
-        {
-            // Save user to database
-        }
-        public void SaveAnimals(IAnimal animal, List<IAnimal> animals)
+        
+        public static void SaveAnimal(IAnimal animal, List<IAnimal> animals)
         {
             animals.Add(animal);
         }
-        //internal static void SaveDate(Animal animal)
-        //{
-        //    // Save user to database
-        //}
-        internal static void SaveDayService(DayService dayService)
+         
+        public static  void SaveDayService(IDayService dayService)
         {
             // Save user to database
         }
-        internal static void SaveExtraService(ExtraService extraService)
+        public static void SaveExtraService(IExtraService extraService)
         {
             // Save user to database
         }
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using SOLID.Service;
+﻿using SOLID.Interfaces;
+using SOLID.Service;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -6,13 +7,17 @@ using System.Text;
 
 namespace SOLID.Service
 {
-    internal static class UserManager
-    {
-        internal static User Create()
+    public  static class UserManager 
+    {     
+
+        public static  IUser Create()
         {
             // Create a new user
-            User user = new User();
+            IUser user = new User();
 
+            // Capture tel
+            DataOutput.ToConsole("Please enter your tel.");
+            user.Telefon = DataInput.FromConsole();
             // Capture first name
             DataOutput.ToConsole("Please enter your first name.");
             user.FirstName = DataInput.FromConsole();
@@ -34,8 +39,10 @@ namespace SOLID.Service
                 DataOutput.ToConsole("That is not a valid last name.");
                 return null;
             }
+            // Capture email
+            DataOutput.ToConsole("Please enter your email.");
+            user.Email = DataInput.FromConsole();
 
-             
             return user;
         }
 

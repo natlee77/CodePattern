@@ -5,28 +5,35 @@ using System.Text;
 
 namespace SOLID.Service 
 {
-   public static class ToDoUser
+   public  static class ToDoUser
     {
-        public static void RegistrateUser()
+        public  static List<IUser> MockUserslist = new List<IUser>
+        {
+                new User {Telefon="11111", FirstName="Stefan", LastName="Karlsson", Email="StefanKarlson@gmail.com",},
+                new User {Telefon="233333", FirstName="Johan", LastName="Larsson", Email="JLarsson@gmail.com"},
+                new User {Telefon="3446456", FirstName="Niklas", LastName="Svensson",  Email="NSvensson@gmail.com"},
+                new User {Telefon="43452345", FirstName="Nataliya", LastName="Lisjö",  Email="natlisjo@gmail.com"},
+        };
+        public static  void RegistrateUser()
         {
             Console.WriteLine("Please registrate you.");
             // Create a user
-            User user = UserManager.Create();
-
+            IUser user = UserManager.Create();
+            List<IUser> users =  MockUserslist;
             // If user is not null print username and save to database
             if (user != null)
             {
                 DataOutput.ToConsole($"We created new User, Your username is: {user.DisplayName}");
-                DataRepository.SaveUser(user);
+                DataRepository.SaveUser(user, users);
             }
 
         }
-        public static void ShowUsers( )
+        public  static void ShowUsers( )
         {
-            List<IUser> users = MockUpp.MockUsers ();
+            List<IUser> users =  MockUserslist ;
             foreach (var u in users )
             {
-                Console.WriteLine($"UserId:{u.Telefon}, Name: {u.FirstName} {u.LastName}, Email: {u.Email} ");
+                Console.WriteLine($"Tel:{u.Telefon}, Name: {u.FirstName} {u.LastName}, Email: {u.Email} ");
             }
         }
     }

@@ -5,14 +5,14 @@ using System.Text;
 using System.Linq;
 namespace SOLID.Service 
 {
-   public static class ToDoAnimal
+   public static  class ToDoAnimal
     {
-        static List<IUser> users = MockUpp.MockUsers();
-        static List<IAnimal> animals = MockUpp.MockAnimals();
+        static List<IUser> users = MockUpp.MockUserslist;
+        static List<IAnimal> animals = MockUpp.MockAnimals ;
 
         
 
-        public static void RegistrateAnimal()
+        public static  void RegistrateAnimal()
         {
             Console.WriteLine("Please registrate your Animal .");
             // Create a animal
@@ -22,7 +22,7 @@ namespace SOLID.Service
             if (_animal != null)
             {
                 DataOutput.ToConsole($"Your petsname is: {_animal.PetsName} ");
-                DataRepository.SaveAnimal(_animal);
+                DataRepository.SaveAnimal(_animal, animals);
             }
 
         }

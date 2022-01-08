@@ -26,10 +26,10 @@ namespace SOLID
         {
             var users = new List<IUser>
             {
-                new User {UserId=1, FirstName="Stefan", LastName="Karlsson", Email="StefanKarlson@gmail.com",},
-                new User {UserId=2, FirstName="Johan", LastName="Larsson", Email="JLarsson@gmail.com"},
-                new User {UserId=3, FirstName="Niklas", LastName="Svensson",  Email="NSvensson@gmail.com"},
-                new User {UserId=4, FirstName="Nataliya", LastName="Lisjö",  Email="natlisjo@gmail.com"},
+                new User {Telefon="11111", FirstName="Stefan", LastName="Karlsson", Email="StefanKarlson@gmail.com",},
+                new User {Telefon="233333", FirstName="Johan", LastName="Larsson", Email="JLarsson@gmail.com"},
+                new User {Telefon="3446456", FirstName="Niklas", LastName="Svensson",  Email="NSvensson@gmail.com"},
+                new User {Telefon="43452345234", FirstName="Nataliya", LastName="Lisjö",  Email="natlisjo@gmail.com"},
             };
             return users;
         }

@@ -8,10 +8,10 @@ namespace SOLID.Interfaces
     {
        int dsID  { get; set; }
        DateTime   DateGetIn  { get; set; }
-       DateTime DateGetOut { get; set; }
-        
-        double PricePerDag { get; set; }
+       DateTime DateGetOut { get; set; }        
+       double PricePerDag { get; set; }    
+       int PetsId { get; set; }
+       
 
-        
     }
 }

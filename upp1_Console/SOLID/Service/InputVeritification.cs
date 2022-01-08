@@ -29,16 +29,18 @@ namespace SOLID.Service
             }
         }
         public static bool VerifyDate(string date)
-        {            
-                try
-                {
-                    DateTime dt = DateTime.Parse(date);
-                    return true;
-                }
-                catch
-                {
-                    return false;
-                }
+        {
+            DateTime temp;
+            return DateTime.TryParse(date, out temp);
+            //     try    
+            //    {
+            //       DateTime dt = DateTime.Parse(date);  
+            //    return true;
+            //}
+            //    else
+            //    {
+            //        return false;
+            //    }
              
         }
     }

@@ -27,6 +27,10 @@ namespace SOLID.Config
             builder.RegisterType<MenuItem>().As<IMenuItem>();
             builder.RegisterType<User>().As<IUser>();
             builder.RegisterType<Animal>().As<IAnimal>();
+            builder.RegisterType<DayService>().As<IDayService>();
+            builder.RegisterType<ExtraService>().As<IExtraService>();
+            builder.RegisterType<Invoice>().As<ICalculator>();
+            
             // return builder
             return builder.Build();
         }

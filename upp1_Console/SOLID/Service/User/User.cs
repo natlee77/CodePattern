@@ -7,22 +7,24 @@ namespace SOLID.Service
    public  class User   : IUser  
     {
         
-        public int UserId { get; set; }      
+        public string Telefon { get; set; }      
         public string FirstName { get; set; }   
         public string Email { get; set; }         
         public string LastName { get; set; }
         public string DisplayName => $"{FirstName }  {LastName }";
 
-        public User() //tomt -altid
+     
+
+        public User()  
         {
         }
-        public User(int userId, string firstName, string lastName, string email)
+
+        public User(string telefon, string firstName, string lastName, string email)
         {
-            UserId = userId;
+            Telefon  = telefon;
             FirstName = firstName;
             LastName = lastName;
             Email = email;
-            
         }
     }
 }

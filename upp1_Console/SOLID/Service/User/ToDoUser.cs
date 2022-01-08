@@ -23,10 +23,10 @@ namespace SOLID.Service
         }
         public static void ShowUsers( )
         {
-            List<IUser> users = MockUpp.MockUsers();
+            List<IUser> users = MockUpp.MockUsers ();
             foreach (var u in users )
             {
-                Console.WriteLine($"UserId:{u.UserId}, Name: {u.FirstName} {u.LastName}, Email: {u.Email} ");
+                Console.WriteLine($"UserId:{u.Telefon}, Name: {u.FirstName} {u.LastName}, Email: {u.Email} ");
             }
         }
     }

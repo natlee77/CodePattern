@@ -8,7 +8,8 @@ namespace SOLID.Service
 {
    public static  class ToDoExtraService
     {
-        
+        public static List<IExtraService> _services = new List<IExtraService>();
+
         public static void Create()
         {
             Console.WriteLine("Please registrate Date when do you want Extra Service for your animal.");
@@ -19,7 +20,7 @@ namespace SOLID.Service
             if (extraService != null)
             {
                 DataOutput.ToConsole($"You booked date is: {extraService.Date} to Do: {extraService.ServiceDescription} for Your pets {extraService.PetsName} ");
-                DataRepository.SaveExtraService(extraService);
+                DataRepository.SaveExtraService(extraService, _services);
             }
         }                
     }

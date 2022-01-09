@@ -1,12 +1,13 @@
 ﻿using SOLID.Interfaces;
-using SOLID.Service;
+
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
+ 
 
-namespace SOLID.Service
+namespace SOLID.Service 
 {
     public static class AnimalManager
     {

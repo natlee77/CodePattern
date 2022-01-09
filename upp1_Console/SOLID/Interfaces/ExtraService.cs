@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
  
-using SOLID.Interfaces;
 
-namespace SOLID.Service
+namespace SOLID.Interfaces
 {
     public class ExtraService : IExtraService
     {
@@ -13,12 +16,7 @@ namespace SOLID.Service
         public bool   Done { get  ; set  ; }
         public string ServiceDescription { get  ; set  ; }
         public double ServicePrice { get  ; set ; }
-        public string PetsName { get; set; }
-         
-
-
-         
-
+        public string PetsName { get; set; }      
 
         public ExtraService()
         { }

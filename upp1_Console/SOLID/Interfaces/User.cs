@@ -1,8 +1,11 @@
-﻿using SOLID.Interfaces;
+﻿
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace SOLID.Service
+namespace SOLID.Interfaces
 {
    public  class User   : IUser  
     {
@@ -19,12 +22,5 @@ namespace SOLID.Service
         {
         }
 
-        public User(string telefon, string firstName, string lastName, string email)
-        {
-            Telefon  = telefon;
-            FirstName = firstName;
-            LastName = lastName;
-            Email = email;
-        }
     }
 }

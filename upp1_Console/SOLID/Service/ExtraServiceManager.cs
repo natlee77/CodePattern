@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using SOLID.Interfaces;
+using System.Linq;
 
 namespace SOLID.Service 
 {
    internal class ExtraServiceManager
     {
          
-        internal static ExtraService CreateExtraService()
+        internal static IExtraService CreateExtraService()
         {
 
-            ExtraService _ExtraService = new ExtraService();
+            IExtraService _ExtraService = new ExtraService();
             
             DataOutput.ToConsole("Please enter date When do you want to put your Animal to trim --- yyyy-mm-dd");
             try
@@ -50,12 +52,4 @@ namespace SOLID.Service
         }
     }
 }
-//Console.Write("Enter a month: ");
-//int month = int.Parse(Console.ReadLine());
-//Console.Write("Enter a day: ");
-//int day = int.Parse(Console.ReadLine());
-//Console.Write("Enter a hour: ");
-//int hour = int.Parse(Console.ReadLine());
-//Console.Write("Enter a minute: ");
-//int minute = int.Parse(Console.ReadLine());
-//DateTime inputtedDate = new DateTime(year, month, day,hour,minute);
+ 

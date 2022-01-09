@@ -1,7 +1,8 @@
-﻿using SOLID.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using SOLID.Interfaces;
+using System.Linq;
 
 namespace SOLID.Service
 {
@@ -21,8 +22,8 @@ namespace SOLID.Service
         {
             Console.WriteLine("Please write date when you want We take care of your Animal .\n");
             // Create a date
-            DayService _dayService = DayServiceManager.CreateDayService();
-            Animal animal = DayServiceManager.CheckInAnimal( );
+            IDayService _dayService = DayServiceManager.CreateDayService();
+            IAnimal animal = DayServiceManager.CheckInAnimal( );
 
             // If user is not null print username and save to database
             if (_dayService != null)

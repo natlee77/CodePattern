@@ -1,12 +1,17 @@
 ﻿
-
-using SOLID.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using SOLID.Menu;
+ 
 
 namespace SOLID
 {
-    public class Application : IApplication
+    internal class Application : IApplication
     {
-        private readonly IKennelMenu _kennelMenu;
+        public readonly IKennelMenu _kennelMenu;
 
         public Application(IKennelMenu kennelMenu)
         {

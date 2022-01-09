@@ -1,10 +1,10 @@
-﻿using SOLID.Config;
+﻿
 using System;
 using Autofac;
 
 namespace SOLID
 {
-    class Program
+    internal class Program
     {
                         //        Programmet ska kunna
                         //1. Registrera nya kunder
@@ -21,16 +21,19 @@ namespace SOLID
                         //10. När ett djur hämtas ska ett kvitto visas med kostnaden för dagen samt eventuella
                         //extratjänster.
                         //11. Övrig funktionalitet som ni tycker är relevant
-        static void Main( )
+        static void Main(string[] args)
         {
             Console.WriteLine(" Welcome to our Animal second home \n We taking Care of Animals \n");
             var container = AFConfig.Configure();
 
-            using (var scope = container.BeginLifetimeScope())
-            {
-                var app = scope.Resolve<IApplication>();
-                app.Run();
-            }
+            //using (var scope = container.BeginLifetimeScope())
+            //{
+            //    var app = scope.Resolve<IApplication>();
+            //    app.Run();
+            //}
+            using var scope = container.BeginLifetimeScope();
+            var app = scope.Resolve<IApplication>();
+            app.Run();
         }
     }
 

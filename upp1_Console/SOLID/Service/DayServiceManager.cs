@@ -11,9 +11,9 @@ namespace SOLID.Service
         //static List<IUser> users = MockUpp.MockUsers;
         static List<IAnimal> animals = ToDoAnimal.MockAnimals ;
       
-        public static Animal CheckInAnimal( )
+        public static IAnimal CheckInAnimal( )
         {
-             Animal _animal = new Animal();
+             IAnimal _animal = new Animal();
              IUser _petsOwner = new User();
 
             DataOutput.ToConsole("Please enter your Animal name.");
@@ -38,10 +38,10 @@ namespace SOLID.Service
             }
             return _animal;
         }
-        internal static DayService CreateDayService()
+        internal static IDayService CreateDayService()
         {
 
-            DayService _daydate = new DayService();
+            IDayService _daydate = new DayService();
 
             DataOutput.ToConsole("Please enter When do you want to put  your Animal to Care--- yyyy-mm-dd");
             try { _daydate.DateGetIn = Convert.ToDateTime(Console.ReadLine()); } //DateTime.Today.ToString(); 

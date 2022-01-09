@@ -1,12 +1,10 @@
-﻿
-using SOLID.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLID.Service
+namespace SOLID.Menu
 {
     class MenuItem : IMenuItem
     {

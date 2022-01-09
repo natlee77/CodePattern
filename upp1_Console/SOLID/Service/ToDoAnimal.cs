@@ -1,8 +1,12 @@
 ﻿using SOLID.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+ 
+
 namespace SOLID.Service 
 {
    public static  class ToDoAnimal
@@ -43,7 +47,7 @@ namespace SOLID.Service
         }
         public static void ShowAnimalsByName()
         {
-            Animal _animal = new Animal();
+            IAnimal _animal = new Animal();
             IUser _petsOwner = new User();
             
             DataOutput.ToConsole("Please enter your Animal name.");

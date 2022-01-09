@@ -1,9 +1,8 @@
 ﻿
-using SOLID.Interfaces;
 using System; 
 using System.Collections.Generic;
 
-namespace SOLID.Service
+namespace SOLID.Interfaces
 {
     public class Invoice : ICalculator 
     {

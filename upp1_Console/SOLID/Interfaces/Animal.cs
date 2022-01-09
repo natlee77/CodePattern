@@ -1,8 +1,11 @@
-﻿using SOLID.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace SOLID.Service
+
+namespace SOLID.Interfaces
 {
     public class Animal : IAnimal  
     {
@@ -13,11 +16,8 @@ namespace SOLID.Service
         public bool CheckIn { get; set; }
         public IUser PetsOwner { get; set; }
         public IDayService DayService { get; set; }
-        public IExtraService extraService { get; set; }
-
-         
-
+        public IExtraService extraService { get; set; }      
             
     }
-
 }
+

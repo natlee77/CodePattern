@@ -15,8 +15,8 @@ namespace SOLID.Service
             // Create a new animal
              Animal _animal = new Animal();
              IUser _petsOwner = new User();
-            List<IUser> users = MockUpp.MockUserslist;
-            List<IAnimal> _animals = MockUpp.MockAnimals ;
+            List<IUser> users = ToDoUser.MockUserslist;
+            List<IAnimal> _animals = ToDoAnimal.MockAnimals ;
 
 
             DataOutput.ToConsole("Please enter your Animal name.");

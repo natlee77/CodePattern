@@ -17,9 +17,9 @@ namespace SOLID.Service
 
         public DayService()
         { }
-        public DayService(int dsID, DateTime dateGetIn,   DateTime dateGetOut, double pricePerDag, int petsId, int invoiceId)
+        public DayService(int _dsID, DateTime dateGetIn,   DateTime dateGetOut, double pricePerDag, int petsId, int invoiceId)
         {
-            dsID = dsID;
+            dsID = _dsID;
             DateGetIn = dateGetIn;
             DateGetOut = dateGetOut;
             PricePerDag = pricePerDag;

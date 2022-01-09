@@ -23,13 +23,13 @@ namespace SOLID.Service
         {
             Console.WriteLine("Please registrate your Animal .");
             // Create a animal
-            Animal _animal = AnimalManager.CreateAnimal(MockAnimals);
+            IAnimal _animal = AnimalManager.CreateAnimal(MockAnimals);
 
             // If user is not null print username and save to database
             if (_animal != null)
             {
                 DataOutput.ToConsole($"Your petsname is: {_animal.PetsName} ");
-                DataRepository.SaveAnimal(_animal, MockAnimals);
+                //DataRepository.SaveAnimal(_animal, MockAnimals);
             }
 
         }
@@ -38,7 +38,7 @@ namespace SOLID.Service
              
             foreach (var a in MockAnimals)
             {
-                Console.WriteLine($"PetsId:{a.PetsId}, PetsName: {a.PetsName}, TypeOfAnimal: {a.TypeOfAnimal}, PetsOwner:{a.PetsOwner.FirstName}");
+                Console.WriteLine($"Telef: {a.PetsOwner.Telefon}, PetsName: {a.PetsName}, TypeOfAnimal: {a.TypeOfAnimal}, PetsOwner:{a.PetsOwner.FirstName}");
             }
         }
         public static void ShowAnimalsByName()
@@ -58,7 +58,7 @@ namespace SOLID.Service
             _animal = (Animal)MockAnimals.FirstOrDefault(a => a.PetsName == inputName);
             if (_animal != null)
             {
-                Console.WriteLine($"PetsName: {_animal.PetsName}, TypeOfAnimal: {_animal.TypeOfAnimal}, PetsOwner:{_animal.PetsOwner.DisplayName}");
+                Console.WriteLine($"PetsName: {_animal.PetsName}, TypeOfAnimal: {_animal.TypeOfAnimal}, PetsOwner: {_animal.PetsOwner.DisplayName},  Telef: 3{_animal.PetsOwner.Telefon}");
                  
             }
             else

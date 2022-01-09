@@ -7,6 +7,7 @@ namespace SOLID.Interfaces
         void CreateMenu(string title, string footer);
         void CreateMenuItem(int selector, string name, Action runThis);
         void ShowMenu();
+      
         public IMenu GetMenu();
     }
 }

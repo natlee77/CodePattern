@@ -19,12 +19,12 @@ namespace SOLID.Service
             Console.WriteLine("Please registrate you.");
             // Create a user
             IUser user = UserManager.Create();
-            List<IUser> users =  MockUserslist;
+             
             // If user is not null print username and save to database
             if (user != null)
             {
                 DataOutput.ToConsole($"We created new User, Your username is: {user.DisplayName}");
-                DataRepository.SaveUser(user, users);
+                DataRepository.SaveUser(user, MockUserslist);
             }
 
         }

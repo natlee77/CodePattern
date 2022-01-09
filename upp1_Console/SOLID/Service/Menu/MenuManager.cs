@@ -42,7 +42,7 @@ namespace SOLID.Service
 
             Console.WriteLine(Menu.Footer);
         }
-
+        
         public IMenu GetMenu()
         {
             return Menu;

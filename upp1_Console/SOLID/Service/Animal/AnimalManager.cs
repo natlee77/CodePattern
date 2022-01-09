@@ -10,10 +10,10 @@ namespace SOLID.Service
 {
     public static class AnimalManager
     {
-        public static Animal CreateAnimal(List<IAnimal> animals)
+        public static IAnimal CreateAnimal(List<IAnimal> animals)
         {
             // Create a new animal
-             Animal _animal = new Animal();
+             IAnimal _animal = new Animal();
              IUser _petsOwner = new User();
             List<IUser> users = ToDoUser.MockUserslist;
             List<IAnimal> _animals = ToDoAnimal.MockAnimals ;
@@ -27,6 +27,8 @@ namespace SOLID.Service
                 DataOutput.ToConsole("That is not a valid name.");
                 return null;
             }
+
+
             DataOutput.ToConsole("Please enter type of your animal .");
             _animal.TypeOfAnimal = DataInput.FromConsole();
             // Verify  
@@ -35,6 +37,8 @@ namespace SOLID.Service
                 DataOutput.ToConsole("That is not a valid type.");
                 return null;
             }            
+
+
             DataOutput.ToConsole("Write Pets owner name: ");
             var inputName = DataInput.FromConsole();
             // Verify                         

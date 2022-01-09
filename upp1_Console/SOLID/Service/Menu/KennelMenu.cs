@@ -24,12 +24,13 @@ namespace SOLID.Service
             _menuManager.CreateMenuItem( 3, " Show all User",  ToDoUser.ShowUsers);
             _menuManager.CreateMenuItem( 4, " Show all animals",  ToDoAnimal.ShowAnimals);
             _menuManager.CreateMenuItem( 5, " Show Animals Owner by PetsName", ToDoAnimal.ShowAnimalsByName);
-            _menuManager.CreateMenuItem( 6, " Animal DayCare in", ToDoDayService.RegistrateAnimalDayCare);
+            _menuManager.CreateMenuItem( 6, " Registrate your Animal in DayCare ", ToDoDayService.RegistrateAnimalDayCare);
              _menuManager.CreateMenuItem( 7," Show all Animals in DayCare  ", ToDoAnimal.ShowAnimalsByCheckIn);
 
-            _menuManager.CreateMenuItem(8, "Cut and Trim", ToDoExtraService.Create);
-            _menuManager.CreateMenuItem(9, "Wash Animal", ToDoExtraService.Create);
-            _menuManager.CreateMenuItem(0, "Cut nails", ToDoExtraService.Create);
+      
+            _menuManager.CreateMenuItem(8, " Cut and Trim", ToDoExtraService.Create);
+            _menuManager.CreateMenuItem(9, " Wash Animal", ToDoExtraService.Create);
+            _menuManager.CreateMenuItem(0, " Cut nails", ToDoExtraService.Create);
             _menuManager.ShowMenu();
         }
 

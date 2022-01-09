@@ -79,7 +79,7 @@ namespace SOLID.Service
             {
                 if (a.CheckIn==true)
                 {
-                    Console.WriteLine($"PetsId:{a.PetsId}, PetsName: {a.PetsName}, TypeOfAnimal: {a.TypeOfAnimal}, PetsOwner:{a.PetsOwner.FirstName} ");
+                    Console.WriteLine($"tel:{a.PetsOwner.Telefon}, PetsName: {a.PetsName}, TypeOfAnimal: {a.TypeOfAnimal}, PetsOwner:{a.PetsOwner.FirstName} ");
                 }
                 else if (a.CheckIn != true && false)
                 {

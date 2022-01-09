@@ -29,7 +29,7 @@ namespace SOLID.Service
             if (_dayService != null)
             {
                 DataOutput.ToConsole($"Your pets is comming in: {_dayService.DateGetIn}");
-                DataRepository.SaveDayService(_dayService);
+                DataRepository.SaveDayService(_dayService, MockDayServices);
             }
         }
          

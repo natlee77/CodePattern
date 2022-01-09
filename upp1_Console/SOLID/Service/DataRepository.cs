@@ -19,13 +19,13 @@ namespace SOLID.Service
             animals.Add(animal);
         }
          
-        public static  void SaveDayService(IDayService dayService)
+        public static  void SaveDayService(IDayService dayService, List<IDayService> services)
         {
-            // Save user to database
+            services.Add(dayService);
         }
-        public static void SaveExtraService(IExtraService extraService)
+        public static void SaveExtraService(IExtraService extraService, List<IExtraService> services)
         {
-            // Save user to database
+            services.Add(extraService);
         }
 
     }

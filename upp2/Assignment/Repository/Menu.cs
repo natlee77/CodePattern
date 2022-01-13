@@ -19,14 +19,16 @@ namespace Design_Patterns_Assignment
             Console.WriteLine();*/
         internal static void Run()
         {
-            
-            var databas= new SimulatedDatabase();
-            string data = databas.Load("Dataset A");
+            IDataRepository databas=new   SimulatedDatabaseA();
+            // SimulatedDatabaseB();
+            string db = "database A";
+            // "database B";
+            string data = databas.Load( db);
             string customer = "";
             string animal = "From Table Animal Where Owner==Steve";
 
             // Draw Menu
-            Console.WriteLine("Repository");
+            Console.WriteLine("Repository  ");
             Console.WriteLine("  DataBase");
             Console.WriteLine("---------------------");
             Console.WriteLine(" Select ");
@@ -72,9 +74,7 @@ namespace Design_Patterns_Assignment
                             Console.WriteLine($" Saved {data}");
                         }
                         else
-                        {
-                            Console.WriteLine(" Nothing to save");
-                        }
+                        {   Console.WriteLine(" Nothing to save");  }
                         break;
 
                     case 'e' or 'E':
@@ -84,9 +84,7 @@ namespace Design_Patterns_Assignment
                             Console.WriteLine($" Saved {customer}");
                         }
                         else
-                        {
-                            Console.WriteLine("Nothing to save");
-                        }
+                        {   Console.WriteLine("Nothing to save");  }
                         break;
 
                     case 'f' or 'F': 
@@ -96,10 +94,7 @@ namespace Design_Patterns_Assignment
                             Console.WriteLine($" Saved {animal}");
                         }
                         else
-                        {
-                            Console.WriteLine("Nothing to save");
-                        }
-
+                        { Console.WriteLine("Nothing to save"); }
                         break;
 
                     case 'x' or 'X':

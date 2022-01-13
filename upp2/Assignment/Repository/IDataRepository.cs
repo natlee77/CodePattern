@@ -13,7 +13,7 @@ namespace Design_Patterns_Assignment.Repository
             string GetAnimal();
 
             void Save(string data);
-            string Load(string v);
+            string Load(string db);
 
 
     }

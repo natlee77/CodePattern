@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace Design_Patterns_Assignment
 {
-    public  class SimulatedDatabase : IDataRepository
+    public  class SimulatedDatabaseA : IDataRepository
     {
-        public  string Load(string v)
+        string db = "Databas A";
+        public  string Load(string db)
         {
-            Console.WriteLine($"Loading data \"{v}\"");
-            return v;
+            Console.WriteLine($"Loading data \"{db}\"");
+            return db;
         }
 
         public  void Save(string data)
@@ -22,8 +23,8 @@ namespace Design_Patterns_Assignment
 
         public string GetAnimal()
         {
-            // Do specific command to get all the data from database type A
-            //return "This is the Animal data";
+            //     the data from database type A
+            
             var animal = Load("  From Table Animal Where Owner == Steve");
             return animal;
         }

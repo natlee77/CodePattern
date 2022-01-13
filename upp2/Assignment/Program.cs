@@ -12,8 +12,8 @@ namespace Design_Patterns_Assignment
 
 
             //Strategy_class.Run();
-            Observer_class.Run();
-            //Repository_class.Run();
+            //Observer_class.Run();
+            Repository_class.Run();
             //Decorator_class.Run();
 
         }

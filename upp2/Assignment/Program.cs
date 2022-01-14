@@ -2,7 +2,7 @@
 using Design_Patterns_Assignment.Strategy;
 using Design_Patterns_Assignment.Observer;
 using Design_Patterns_Assignment.Decorator;
-using Design_Patterns_Assignment.Strategy;
+
 using System; 
 using Autofac;
 using Design_Patterns_Assignment.Repository;

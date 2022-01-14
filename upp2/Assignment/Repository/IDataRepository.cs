@@ -9,8 +9,8 @@ namespace Design_Patterns_Assignment.Repository
      interface IDataRepository
     {
             string GetData();
-            string GetCustomer();
-            string GetAnimal();
+            string GetCustomer(string user);
+            string GetAnimal(string owner);
 
             void Save(string data);
             string Load(string db);

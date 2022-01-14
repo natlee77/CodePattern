@@ -4,21 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Design_Patterns_Assignment.Observer 
+namespace Design_Patterns_Assignment.Observer.ObserverFiles
 {
     internal class EmailWatcher : IEmailWatcher
     {
-        Email  Email = new Email();
-        
-        public void Update( )
+        //public void Update(string message)
+        //{
+        //    Console.WriteLine(message);
+        //}
+
+        public void Update(DateTime time)
         {
-            var email = "";
-            while (string.IsNullOrEmpty(email))
-            {
-                email = Email.Check();
-            }
-            //Email.Check();
-            Console.WriteLine(email);
+            Console.WriteLine($"This is the email - Date: {time}");
         }
 
     }

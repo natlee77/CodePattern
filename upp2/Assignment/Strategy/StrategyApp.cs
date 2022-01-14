@@ -12,7 +12,7 @@ namespace Design_Patterns_Assignment
         //MessageHandler.SendSMS(message);
         //MessageHandler.SendFacebookMessage(message);*/
 
-    internal class Strategy_class    
+    internal class StrategyApp   
     {        
         internal static void Run() 
         {    

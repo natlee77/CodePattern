@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "TIP8UjlxZdf9xjfUmOVSPHDRtzbROyEhBEQgdY7r50ucBvPiUtHEJ/2o8h4h0ft4qedR8+eK4L/pxvcwtymWrA==",
+  "dgSpecHash": "riMF9FHIN5lRlQv/FeFhUPoSHuYUj9mwbHlRnvQxem4tpuQabmQZ8LMXdVGcx6ubJWIT8mMEH3lIqVnNDY3pjg==",
   "success": true,
   "projectFilePath": "D:\\Nataliya\\.NET\\Code pattern\\Code\\My\\upp1\\SOLID\\upp2\\Assignment\\Design Patterns Assignment.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\46735\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
+    "C:\\Users\\46735\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
   "logs": []
 }

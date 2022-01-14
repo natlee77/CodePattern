@@ -9,7 +9,7 @@ namespace Design_Patterns_Assignment
 {
     public  class SimulatedDatabaseB : IDataRepository
     {
-        string db = "Databas B";
+        
         public  string Load( string db)
         {
             Console.WriteLine($"Loading data \"{db}\"");
@@ -21,17 +21,17 @@ namespace Design_Patterns_Assignment
             Console.WriteLine($"Saving data \"{data}\"");
         }
 
-        public string GetAnimal()
+        public string GetAnimal(string owner)
         {
             // Do specific command to get all the data from database type B
              
-            var animal = Load("  From Table Animal Where Owner == Nataliya");
+            var animal = Load($"  From Table Animal Where Owner == {owner} ");
             return animal;
         }
 
-        public string GetCustomer()
+        public string GetCustomer(string user)
         {
-            var customer = Load("From Table Customer Where Name == Nataliya");
+            var customer = Load("From Table Customer Where Name == {user}");
             return customer;
         }
 

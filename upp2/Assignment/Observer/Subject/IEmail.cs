@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-
-namespace Design_Patterns_Assignment.Observer 
+ 
+namespace Design_Patterns_Assignment.Observer.Subject
 {
-    interface IEmail : ISubject
+   public interface IEmail : ISubject
     {
+        //string Check();
+        DateTime Time { get; set; }
+        void UpdateTime();
     }
 }

@@ -1,4 +1,5 @@
-﻿using Design_Patterns_Assignment.Observer;
+﻿ 
+using Design_Patterns_Assignment.Observer.ObserverFiles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,16 +7,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 
-namespace Design_Patterns_Assignment.Observer
+namespace Design_Patterns_Assignment.Observer.Subject
 {
-    internal class Email :  IEmail    
+    internal class Email : IEmail
     {
         public List<IObserver> Observers { get; set; }
         public DateTime Time { get; set; }
-       
+
         public Email()
         {
-            Observers = new List<IObserver>();            
+            Observers = new List<IObserver>();
+           
         }       
 
         public void RegisterObserver(IObserver observer)
@@ -26,26 +28,26 @@ namespace Design_Patterns_Assignment.Observer
         {
             Observers.Remove(observer);
         }
-        public void NotifyObservers()
+        //public void NotifyObservers(string message)
+        //{
+        //    foreach (var observer in Observers)
+        //    {                                
+        //        observer.Update(message);
+        //    }
+        //}         
+        public void NotifyObservers( )
         {
             foreach (var observer in Observers)
             {
-                                
-                observer.Update();
+                observer.Update(Time);
             }
-        }         
-        
-        internal static string Check()    //class Email_upp
+        }
+       
+        public void UpdateTime()
         {
-            var evenMinute = DateTime.Now.Minute % 2;
-            if (evenMinute == 0)
-            {
-
-                return $"{DateTime.Now} this is the NEW email   ";
-            }
-            return null;
-           
-        }    
+            Time = DateTime.Now;
+            NotifyObservers();
+        }
     }
 }
 

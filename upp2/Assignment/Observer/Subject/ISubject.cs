@@ -1,13 +1,16 @@
-﻿using Design_Patterns_Assignment.Observer ;
+﻿ 
+using Design_Patterns_Assignment.Observer.ObserverFiles;
+using System;
 using System.Collections.Generic;
 
-namespace Design_Patterns_Assignment.Observer 
+namespace Design_Patterns_Assignment.Observer.Subject
 {
-    internal interface ISubject
+    public interface ISubject
     {
         List<IObserver> Observers { get; set; }
         void RegisterObserver(IObserver observer);
         void UnRegisterObserver(IObserver observer);
+      
         void NotifyObservers();
     }
 }

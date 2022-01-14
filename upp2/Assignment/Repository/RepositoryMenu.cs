@@ -4,7 +4,7 @@ using System;
 
 namespace Design_Patterns_Assignment
 {
-    internal class Repository_class
+    internal class RepositoryMenu : IRepositoryMenu
     {
         /*uppgift: Refactor this code so that it uses the Repository Pattern
 
@@ -17,15 +17,15 @@ namespace Design_Patterns_Assignment
             SimulatedDatabase.Save(customer);
             SimulatedDatabase.Save(animal);
             Console.WriteLine();*/
-        internal static void Run()
+        public  void Run()
         {
             IDataRepository databas=new   SimulatedDatabaseA();
             // SimulatedDatabaseB();
             string db = "database A";
             // "database B";
             string data = databas.Load( db);
-            string customer = "";
-            string animal = "From Table Animal Where Owner==Steve";
+            string customer = "Stefan";
+            string animal = "Tindra";
 
             // Draw Menu
             Console.WriteLine("Repository  ");
@@ -54,37 +54,37 @@ namespace Design_Patterns_Assignment
                 {
                     case 'a' or 'A':
                         data = databas.GetData();
-                        Console.WriteLine($" Load {data}");
+                        Console.WriteLine($" Load {data}\n");
                         break;
 
                     case 'b' or 'B':
-                        customer = databas.GetCustomer();
-                        Console.WriteLine($" Load {customer}");
+                        customer = databas.GetCustomer(customer);
+                        Console.WriteLine($" Load {customer} from ---{db}\n");
                         break;
 
                     case 'c' or 'C':
-                        animal = databas.GetAnimal();
-                        Console.WriteLine($" Load {animal}");
+                        animal = databas.GetAnimal( customer);
+                        Console.WriteLine($" Load {animal} from ---{db}\n");
                         break;
 
                     case 'd' or 'D':
                         if (data != "")
                         {
                             databas.Save(data);
-                            Console.WriteLine($" Saved {data}");
+                            Console.WriteLine($" Saved {data} to ---{db}\n");
                         }
                         else
-                        {   Console.WriteLine(" Nothing to save");  }
+                        {   Console.WriteLine(" Nothing to save\n" );  }
                         break;
 
                     case 'e' or 'E':
                         if (customer != "")
                         {
                             databas.Save(customer);
-                            Console.WriteLine($" Saved {customer}");
+                            Console.WriteLine($" Saved {customer}\n");
                         }
                         else
-                        {   Console.WriteLine("Nothing to save");  }
+                        {   Console.WriteLine("Nothing to save\n");  }
                         break;
 
                     case 'f' or 'F': 
@@ -109,6 +109,8 @@ namespace Design_Patterns_Assignment
             }
         }
     }
+
+   
 }
      
  

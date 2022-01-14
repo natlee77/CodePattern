@@ -1,7 +1,11 @@
-﻿using Design_Patterns_Assignment;
+﻿ 
 using Design_Patterns_Assignment.Strategy;
-using System;
-using System.Timers;
+using Design_Patterns_Assignment.Observer;
+using Design_Patterns_Assignment.Decorator;
+using Design_Patterns_Assignment.Strategy;
+using System; 
+using Autofac;
+using Design_Patterns_Assignment.Repository;
 
 namespace Design_Patterns_Assignment
 {
@@ -10,11 +14,28 @@ namespace Design_Patterns_Assignment
         static void Main(string[] args)
         {
 
+            var container = AFConfigure.Configure();
+            using var scope = container.BeginLifetimeScope();
 
-            //Strategy_class.Run();
-            //Observer_class.Run();
-            Repository_class.Run();
-            //Decorator_class.Run();
+            /* Decorator */
+            //DecoratorMenu.Run();
+
+
+            /* Observer */
+            var observerapplication = scope.Resolve<IObserverMenu>();
+            observerapplication.Run();
+
+
+            /* Repository */
+            //var repositoryapplication = scope.Resolve<IRepositoryMenu>();
+            //repositoryapplication.Run();
+
+
+            /* Strategy */
+            //StrategyApp.Run();
+
+
+
 
         }
     }

@@ -62,3 +62,5 @@ D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp2\Assignment\bin\Debug\net5.
 D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp2\Assignment\bin\Debug\net5.0\ref\Design Patterns Assignment.dll
 D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp2\Assignment\bin\Debug\net5.0\Design Patterns Assignment.pdb
 D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp2\Assignment\obj\Debug\net5.0\Design Patterns Assignment.genruntimeconfig.cache
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp2\Assignment\bin\Debug\net5.0\Autofac.dll
+D:\Nataliya\.NET\Code pattern\Code\My\upp1\SOLID\upp2\Assignment\obj\Debug\net5.0\Design Patterns Assignment.csproj.CopyComplete

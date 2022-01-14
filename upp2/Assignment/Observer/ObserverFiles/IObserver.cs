@@ -1,11 +1,11 @@
 ﻿using Design_Patterns_Assignment.Observer ;
 using System;
 
-namespace Design_Patterns_Assignment.Observer 
+namespace Design_Patterns_Assignment.Observer.ObserverFiles
 {
-      interface IObserver
-    {        
-        void Update ( );
-        //public void Update(string message);
+    public  interface IObserver
+    {
+        //void Update (string message);
+        void Update(DateTime Time);
     }
 }

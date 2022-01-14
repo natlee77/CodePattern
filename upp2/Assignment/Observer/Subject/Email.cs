@@ -22,19 +22,15 @@ namespace Design_Patterns_Assignment.Observer.Subject
 
         public void RegisterObserver(IObserver observer)
         {
-            Observers.Add(observer);   
+            Observers.Add(observer);
+            Console.WriteLine("Observer Registered");
         }
         public void UnRegisterObserver(IObserver observer)
         {
             Observers.Remove(observer);
+            Console.WriteLine("Observer unregistered");
         }
-        //public void NotifyObservers(string message)
-        //{
-        //    foreach (var observer in Observers)
-        //    {                                
-        //        observer.Update(message);
-        //    }
-        //}         
+               
         public void NotifyObservers( )
         {
             foreach (var observer in Observers)

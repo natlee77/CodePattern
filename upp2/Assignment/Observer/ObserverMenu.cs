@@ -25,7 +25,7 @@ namespace Design_Patterns_Assignment
             Console.WriteLine("---------------------");
             Console.WriteLine(" Observer   :");
             Console.WriteLine($"------------------------------\n");
-            Console.WriteLine("A: update time");
+            Console.WriteLine("A: update  ");
             Console.WriteLine("S: subscribe/unsubscribe");
             Console.WriteLine("Q: exits the program");
             Console.WriteLine("---------------------");

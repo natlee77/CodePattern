@@ -8,14 +8,11 @@ namespace Design_Patterns_Assignment.Observer.ObserverFiles
 {
     internal class EmailWatcher : IEmailWatcher
     {
-        //public void Update(string message)
-        //{
-        //    Console.WriteLine(message);
-        //}
+        
 
         public void Update(DateTime time)
         {
-            Console.WriteLine($"This is the email - Date: {time}");
+            Console.WriteLine($" This is the email - Date: {time}");
         }
 
     }
